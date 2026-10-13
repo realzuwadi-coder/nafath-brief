@@ -42,5 +42,11 @@ Resource: Understand star schema and the importance for Power BI - https://learn
 
 
 ## Misconception in My Track
+A common misconception is that incident response begins only after an attack is detected, so preparation can be treated as a separate concern. In reality, effective cybersecurity requires ongoing readiness, coordination, and improvement before, during, and after an incident. For the 5G emergency service, the operator should prepare response procedures, assign responsibilities, and test recovery plans before an attack occurs. NIST explains this in Section 2, “Incident Response as Part of Cybersecurity Risk Management,” of SP 800-61 Rev. 3.
+
+Supporting sentence: “Incident response is now considered a critical part of cybersecurity risk management that should be integrated across organizational operations.”
+
 
 ## Open Question
+How can the operator test whether its dedicated emergency 5G slice remains reliable during a major outage affecting shared network infrastructure?
+
