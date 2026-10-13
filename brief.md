@@ -6,10 +6,22 @@ The emergency responder 5G service depends on six IT fields working together to 
 
 
 ## Software
+Safe HTTP methods are GET, HEAD, OPTIONS, and TRACE; they are intended not to change server state. Idempotent methods include PUT and DELETE, as well as all safe methods: repeating the same request has the same intended effect as sending it once. POST is not generally idempotent. This distinction matters during automatic retries because repeating a POST may create duplicate actions unless the client and server use appropriate safeguards.
+
+Resource: RFC 9110: HTTP Semantics - https://www.rfc-editor.org/rfc/rfc9110.html
+
 
 ## AI
+Overfitting happens when a model learns noise or details specific to its training data instead of patterns that generalize to new situations. It may perform well on training data but poorly on unseen network traffic. Cross-validation divides data into multiple training and validation folds, then evaluates the model repeatedly. Comparing training and validation performance helps reveal overfitting and assess whether the model is likely to predict congestion reliably on new data.
+
+Resource: Cross-validation: evaluating estimator performance - https://scikit-learn.org/stable/modules/cross_validation.html
+
 
 ## Mobile
+An offline-first responder app should keep essential information available locally and allow responders to record updates without a network connection. It should clearly indicate connection status and queue changes securely with timestamps and unique identifiers. When connectivity returns, the app should synchronize pending changes, handle conflicting updates using defined rules, and avoid duplicate submissions. It should also show whether each update is pending, synchronized, or requires attention.
+
+Resource: Build an offline-first app - https://developer.android.com/topic/architecture/data-layer/offline-first
+
 
 ## Networking
 
